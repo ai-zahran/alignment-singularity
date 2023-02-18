@@ -9,6 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         g++ \
+        gcc-multilib \
         make \
         automake \
         autoconf \
