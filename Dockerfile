@@ -10,7 +10,6 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         g++ \
         gcc-multilib \
-        libx11-dev:i386 \
         libx11-dev \
         make \
         automake \
