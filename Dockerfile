@@ -34,7 +34,7 @@ ADD htk.tar.gz /codes/
 WORKDIR /codes/htk/
 
 RUN export CPPFLAGS=-UPHNALG
-RUN ./configure
+RUN ./configure  --disable-hlmtools --disable-hslab
 RUN make all
 RUN make install
 WORKDIR /
