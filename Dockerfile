@@ -28,6 +28,7 @@ RUN apt-get update && \
         patch \
         ffmpeg
 
+# Install HTK 3.4
 RUN mkdir /codes
 ADD htk.tar.gz /codes/
 
@@ -38,6 +39,8 @@ RUN ./configure  --disable-hlmtools --disable-hslab
 RUN make all
 RUN make install
 WORKDIR /
-# RUN rm -r /codes/
+RUN rm -r /codes/
+
+RUN git clone https://github.com/jaekookang/p2fa_py3.git
 
 RUN rm -rf /var/lib/apt/lists/*
