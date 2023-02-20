@@ -43,4 +43,6 @@ RUN rm -r /codes/
 
 RUN git clone https://github.com/jaekookang/p2fa_py3.git
 
+RUN pip install Montreal-Forced-Aligner
+
 RUN rm -rf /var/lib/apt/lists/*
