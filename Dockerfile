@@ -44,7 +44,7 @@ RUN rm -r /codes/
 RUN git clone https://github.com/jaekookang/p2fa_py3.git
 
 # Install Montreal Forced Aligner
-RUN pip install pgvector
+RUN pip install pgvector kaldi pynini
 RUN pip install Montreal-Forced-Aligner
 RUN mfa model download acoustic english_us_arpa
 RUN mfa model download dictionary english_us_arpa
