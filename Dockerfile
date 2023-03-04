@@ -60,7 +60,7 @@ RUN git clone --depth 1 https://github.com/kaldi-asr/kaldi.git /opt/kaldi && \
     rm -rf /opt/kaldi/.git
 
 # Install Montreal Forced Aligner
-RUN pip install pgvector pynini hdbscan
+RUN pip install pykaldi pgvector pynini hdbscan
 RUN pip install Montreal-Forced-Aligner
 RUN mfa model download acoustic english_us_arpa
 RUN mfa model download dictionary english_us_arpa
