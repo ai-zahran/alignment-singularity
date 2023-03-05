@@ -27,7 +27,8 @@ RUN apt-get update && \
         ca-certificates \
         patch \
         ffmpeg \
-        libfst-dev
+        libfst-dev \
+        libfst-tools
 
 # Install HTK 3.4
 RUN mkdir /codes
