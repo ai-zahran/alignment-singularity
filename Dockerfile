@@ -2,6 +2,10 @@ FROM continuumio/miniconda3
 
 RUN conda create -n aligner -c conda-forge montreal-forced-aligner
 
+RUN source activate aligner
+
+RUN mfa model download acoustic english_us_arpa
+
 # RUN apt-get update
 
 # RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-recommends --quiet \
